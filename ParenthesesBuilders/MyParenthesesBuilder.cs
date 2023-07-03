@@ -12,7 +12,7 @@ public class MyParenthesesBuilder : IParenthesesBuilder
         _builder = new StringBuilder();
     }
 
-    public string GenerateValidParentheses(int length = 6)
+    public string GenerateValidParentheses(int length)
     {
         if (length % 2 != 0 || length < 2) throw new LengthNotValidException("Length Must Be Even Number and Greater than 0!");
         int maxParentheses = length / 2;
@@ -28,11 +28,6 @@ public class MyParenthesesBuilder : IParenthesesBuilder
         }
 
         parenthesesLayers = parenthesesLayers.Order().ToList();
-
-        for (int i = 0; i < parenthesesLayers.Count; i++)
-        {
-            Console.WriteLine($"i: {i}, Layer: {parenthesesLayers[i]}");
-        }
 
         for (int i = 1; i < parenthesesLayers.Count; i++)
         {
@@ -51,11 +46,8 @@ public class MyParenthesesBuilder : IParenthesesBuilder
 
         for (int i = 0; i < parentheses.Length; i++)
         {
-            if (parentheses[i] == '(')
-                currentLayer++;
-            else
-                currentLayer--;
-
+            if (parentheses[i] == '(') currentLayer++;
+            else currentLayer--;
             if (currentLayer == layer) indexes.Add(i + 1);
         }
 

@@ -9,5 +9,8 @@
         "**/obj": true,
         "**/bin": true
     },
-    "explorerExclude.backup": {}
+    "explorerExclude.backup": {},
+    "cSpell.words": [
+        "Buddys"
+    ]
 }
