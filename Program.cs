@@ -11,14 +11,13 @@ string GeneratePattern(int length = 6)
     StringBuilder builder = new StringBuilder();
     int maxParentheses = length / 2;
     List<int> parenthesesLayers = new List<int>();
-    Random random = new Random();
 
     parenthesesLayers.Add(0);
     builder.Append("()");
 
     for (int i = 1; i < maxParentheses; i++)
     {
-        int layer = random.Next(0, parenthesesLayers.Max() + 2);
+        int layer = Random.Shared.Next(0, parenthesesLayers.Max() + 2);
         parenthesesLayers.Add(layer);
     }
 
@@ -32,7 +31,7 @@ string GeneratePattern(int length = 6)
     for (int i = 1; i < parenthesesLayers.Count; i++)
     {
         var possibleIndexes = FindPossibleIndexes(builder.ToString(), parenthesesLayers[i]);
-        int index = possibleIndexes[random.Next(0, possibleIndexes.Count)];
+        int index = possibleIndexes[Random.Shared.Next(0, possibleIndexes.Count)];
         builder.Insert(index, "()");
     }
 
