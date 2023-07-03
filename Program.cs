@@ -54,10 +54,5 @@ List<int> FindPossibleIndexes(string parentheses, int layer)
         if (currentLayer == layer) indexes.Add(i + 1);
     }
 
-    // foreach (var index in indexes)
-    // {
-    //     Console.WriteLine($"Possible Index: {index}");
-    // }
-    // Console.WriteLine("");
     return indexes;
 }
