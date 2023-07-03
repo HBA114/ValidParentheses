@@ -15,7 +15,7 @@
 dotnet run
 ```
 ## Output Sample
-```shell
+```csharp
 HBA114's Result: ((())())
 Tech Buddy's Result: (()()())
 ```
