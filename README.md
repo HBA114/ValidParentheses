@@ -1,5 +1,5 @@
 # ValidParentheses C# Console Project
-- This project developed for creating valid randomized parentheses, includes my approach and [Tech Buddy's](https://www.youtube.com/watch?v=CEvBYUPQQMQ&ab_channel=TechBuddy) aproach to solve the problem.
+- This project developed for creating valid randomized parentheses, includes [my](https://github.com/HBA114) approach and [Tech Buddy's](https://www.youtube.com/watch?v=CEvBYUPQQMQ&ab_channel=TechBuddy) aproach to solve the problem.
 - Question is available in [this](https://www.youtube.com/watch?v=qlWjzNdilBs&ab_channel=TechBuddy) video (Junior Dev Interview) from Tech Buddy's youtube channel.
 
 - [Requirements](#requirements)
