@@ -16,7 +16,7 @@ public class TechBuddysParenthesesBuilder : IParenthesesBuilder
     public string GenerateValidParentheses(int length)
     {
         if (length % 2 != 0 || length < 2)
-            throw new LengthNotValidException("Length Must Be Even Number and Greater than 0!");
+            throw new LengthNotValidException();
 
         return GenerateParentheses(length: length, openCount: 0, closeCount: 0);
     }

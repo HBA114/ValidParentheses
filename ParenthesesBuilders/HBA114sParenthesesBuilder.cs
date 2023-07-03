@@ -14,7 +14,7 @@ public class HBA114sParenthesesBuilder : IParenthesesBuilder
 
     public string GenerateValidParentheses(int length)
     {
-        if (length % 2 != 0 || length < 2) throw new LengthNotValidException("Length Must Be Even Number and Greater than 0!");
+        if (length % 2 != 0 || length < 2) throw new LengthNotValidException();
         int maxParentheses = length / 2;
         List<int> parenthesesLayers = new List<int>();
 
