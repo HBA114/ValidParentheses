@@ -4,10 +4,10 @@ using ValidParentheses.Exceptions;
 
 namespace ValidParentheses.ParenthesesBuilders;
 
-public class MyParenthesesBuilder : IParenthesesBuilder
+public class HBA114sParenthesesBuilder : IParenthesesBuilder
 {
     private StringBuilder _builder;
-    public MyParenthesesBuilder()
+    public HBA114sParenthesesBuilder()
     {
         _builder = new StringBuilder();
     }

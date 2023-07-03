@@ -2,11 +2,11 @@
 
 // Valid Parentheses Question from a Junior Developer Interview
 
-IParenthesesBuilder myParenthesesBuilder = new MyParenthesesBuilder();
+IParenthesesBuilder hba114sParenthesesBuilder = new HBA114sParenthesesBuilder();
 IParenthesesBuilder techBuddysParenthesesBuilder = new TechBuddysParenthesesBuilder();
 
-string myResult = myParenthesesBuilder.GenerateValidParentheses(8);
+string hba114sResult = hba114sParenthesesBuilder.GenerateValidParentheses(8);
 string techBuddysResult = techBuddysParenthesesBuilder.GenerateValidParentheses(8);
 
-Console.WriteLine($"My Result: {myResult}");
+Console.WriteLine($"HBA114's Result: {hba114sResult}");
 Console.WriteLine($"Tech Buddy's Result: {techBuddysResult}");
