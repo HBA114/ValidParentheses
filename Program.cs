@@ -5,7 +5,7 @@ using System.Text;
 var res = GeneratePattern(10);
 Console.WriteLine($"Result: {res}");
 
-string GeneratePattern(int length)
+string GeneratePattern(int length = 6)
 {
     if (length % 2 != 0 || length < 2) return "Length Must Be Even Number and Greater than 0!";
     StringBuilder builder = new StringBuilder();
