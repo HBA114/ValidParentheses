@@ -7,10 +7,12 @@ namespace ValidParentheses.ParenthesesBuilders;
 public class TechBuddysParenthesesBuilder : IParenthesesBuilder
 {
     private StringBuilder _builder;
-    private char[] _arr = new[] { '(', ')' };
+    private char[] _arr;
+
     public TechBuddysParenthesesBuilder()
     {
         _builder = new StringBuilder();
+        _arr = new[] { '(', ')' };
     }
 
     public string GenerateValidParentheses(int length)

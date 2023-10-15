@@ -7,6 +7,7 @@ namespace ValidParentheses.ParenthesesBuilders;
 public class HBA114sParenthesesBuilder : IParenthesesBuilder
 {
     private StringBuilder _builder;
+
     public HBA114sParenthesesBuilder()
     {
         _builder = new StringBuilder();
@@ -53,5 +54,4 @@ public class HBA114sParenthesesBuilder : IParenthesesBuilder
 
         return indexes;
     }
-
 }
